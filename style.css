@@ -24,10 +24,6 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -3;
-    background-image: url("assets/windzoz.webp");
-    background-size: cover;
-    overflow: hidden;
-    padding-top: 20px;
 }
 
 #client {
@@ -37,6 +33,7 @@ body {
     height: 900px;
     width: 1600px;
     margin: 0 auto;
+    border-top: solid 3px var(--riot-gldd);
 }
 
 #main {
@@ -86,23 +83,58 @@ body {
 #profile {
     grid-row: 1 / 2;
     border-bottom: solid 0.5px var(--cino-gldb);
+    display: grid;
+    grid-template-columns: 1.15fr 1.5fr 0.6fr;
 }
+
+#summonerIcon {
+    background-image: url("");
+}
+
+
+
 
 #social {
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 24fr;
 }
 
 #socialOpt {
-
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap: 5px;
 }
 
-#friends {
-
+#socialSpan {
+    color: var(--riot-text);
+    text-align: left;
+    margin-left: 10px;
+    font-family: "Beaufort Bold";
+    font-size: medium;
+    width: 100%;
 }
 
-.friend {
-
+#socialIcons {
+    display: flex;
+    gap: 10px;
+    display: relative;
+    height: 100%;
 }
+
+.socialIcon {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("assets/icon_low.png");
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+
 
 #buttons {
     grid-row: 3 / 4;
