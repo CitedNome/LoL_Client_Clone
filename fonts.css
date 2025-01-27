@@ -1,0 +1,66 @@
+/* BEAUFORT FAMILY */
+
+@font-face {
+    font-family: "Beaufort Regular";
+    src: url("assets/fonts/beaufort-for-lol/BeaufortforLOL-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Beaufort Medium";
+    src: url("assets/fonts/beaufort-for-lol/BeaufortforLOL-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Beaufort Bold";
+    src: url("assets/fonts/beaufort-for-lol/BeaufortforLOL-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Beaufort Italic";
+    src: url("assets/fonts/beaufort-for-lol/BeaufortforLOL-Italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Beaufort Heavy";
+    src: url("assets/fonts/beaufort-for-lol/BeaufortforLOL-Heavy.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* SPIEGEL FAMILY */
+
+@font-face {
+    font-family: "Spiegel Regular";
+    src: url("assets/fonts/spiegel/SpiegelSans-5Regular_.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spiegel Bold";
+    src: url("assets/fonts/spiegel/SpiegelSans-7Bold_.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spiegel Italic";
+    src: url("assets/fonts/spiegel/SpiegelSans-5RegularItalic_.otf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spiegel Heavy";
+    src: url("assets/fonts/spiegel/SpiegelSans-9Black_.otf");
+    font-weight: 900;
+    font-style: normal;
+}
