@@ -8,7 +8,7 @@
     --riot-blue: rgb(10, 203, 230);
     --riot-gldb: rgb(200, 170, 110);
     --riot-gldd: rgb(120, 90, 40);
-    --riot-gold-btn: linear-gradient(180deg, var(--riot-gldb) 5%, var(--riot-gldd) 95%);
+    --riot-gold-btn: linear-gradient(180deg, var(--riot-gldb) 15%, var(--riot-gldd) 100%);
 
 
     --cino-gldb: rgba(200, 170, 110, 0.75);
@@ -23,7 +23,7 @@ body {
     text-align: center;
     width: 100vw;
     height: 100vh;
-    z-index: -3;
+    z-index: -5;
 }
 
 #client {
@@ -50,7 +50,7 @@ body {
     height: 100%;
     position: absolute;
     object-fit: cover;
-    z-index: -1;
+    z-index: -4;
 }
 
 #navbar {
@@ -76,7 +76,6 @@ body {
     background-color: var(--riot-dark);
     display: grid;
     grid-template-rows: 1fr 7.55fr 0.45fr;
-    
     /* background-color: rgba(0, 255, 0, 0.5); */
 }
 
@@ -87,12 +86,91 @@ body {
     grid-template-columns: 1.15fr 1.5fr 0.6fr;
 }
 
-#summonerIcon {
-    background-image: url("");
+#badge {
+    display: grid;
+    place-items: center;
+    position: relative;
 }
 
+#badge .circle0 {
+    background-image: linear-gradient(180deg, rgb(196, 168, 77) 0%, rgb(147, 112, 47) 15%, rgb(147, 112, 47) 75%,  rgb(120, 90, 40) 80%);
+    border-radius: 50%;
+    width: 77.5%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    transform: translate(0px, -5.5px);
+    z-index: 1;
+}
 
+#badge .circle1 {
+    background-image: linear-gradient(130deg, rgb(25, 160, 210) 50%, rgb(10, 50, 60) 50%);
+    border-radius: 50%;
+    width: 72.5%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    transform: translate(0px, -5.5px);
+    z-index: 2;
+}
 
+#badge .circle2 {
+    background-image: linear-gradient(180deg, rgb(196, 168, 77) 0%, rgb(147, 112, 47) 15%, rgb(147, 112, 47) 75%,  rgb(120, 90, 40) 80%);
+    border-radius: 50%;
+    width: 67.5%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    transform: translate(0px, -5.5px);
+    z-index: 3;
+}
+
+#summonerIcon {
+    width: 60%;
+    border-radius: 50%;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    transform: translate(0px, 10px);
+    background-image: url("assets/3151.png");
+    border: solid 2px;
+    z-index: 4;
+}
+
+#summonerLvlDiv {
+    width: 90%;
+    margin: 0 auto;
+    color: var(--riot-text);
+    transform: translate(0px, -5px);
+    background-image: url("assets/lvl.svg");
+    background-size:contain;
+    overflow: visible;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding: 1px;
+    z-index: 5;
+    /* visibility: hidden; */
+}
+
+#profileText {
+    color: var(--riot-text);
+    text-align: left;
+}
+
+#summonerStatus {
+    font-family: "Spiegel Regular";
+    color: rgb(0, 167, 46);
+    padding-left: 3px;
+}
+
+#summonerStatus::before {
+    content: "";
+    width: 10px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--riot-gren);
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 1px rgb(54, 217, 135);
+    transform: translate(-3px, 0);
+}
 
 #social {
     grid-row: 2 / 3;

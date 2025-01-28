@@ -39,28 +39,28 @@
 
 @font-face {
     font-family: "Spiegel Regular";
-    src: url("assets/fonts/spiegel/SpiegelSans-5Regular_.otf");
+    src: url("assets/fonts/spiegel/SpiegelSans-5Regular_.woff2") format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Spiegel Bold";
-    src: url("assets/fonts/spiegel/SpiegelSans-7Bold_.otf");
+    src: url("assets/fonts/spiegel/SpiegelSans-7Bold_.woff2") format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Spiegel Italic";
-    src: url("assets/fonts/spiegel/SpiegelSans-5RegularItalic_.otf");
+    src: url("assets/fonts/spiegel/SpiegelSans-5RegularItalic_.woff2") format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Spiegel Heavy";
-    src: url("assets/fonts/spiegel/SpiegelSans-9Black_.otf");
+    src: url("assets/fonts/spiegel/SpiegelSans-9Black_.woff2") format('woff');
     font-weight: 900;
     font-style: normal;
 }
