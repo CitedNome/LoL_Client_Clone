@@ -65,6 +65,71 @@ body {
     /*! background-color: rgba(255, 0, 0, 0.5); */
 }
 
+#mix {
+    grid-column: 4 / 5;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#noxus {
+    background-image: url("assets/noxus.svg");
+}
+
+#noxus:hover {
+    background-image:url("assets/noxus.svg"), linear-gradient(180deg, rgba(205, 190, 145, 0.1) 0%, rgba(205, 190, 145, 0.25)75%, rgba(205,190,145,0.75) 100%); 
+}
+
+#clash {
+    background-image: url("assets/clash.svg");
+    background-size: 45%;
+}
+
+#clash:hover {
+    background-image:url("assets/clash.svg"), linear-gradient(180deg, rgba(205, 190, 145, 0.1) 0%, rgba(205, 190, 145, 0.25)75%, rgba(205,190,145,0.75) 100%); 
+}
+
+#inven {
+    background-image: url("assets/backpack.svg");
+}
+
+#inven:hover {
+    background-image:url("assets/backpack.svg"), linear-gradient(180deg, rgba(205, 190, 145, 0.1) 0%, rgba(205, 190, 145, 0.25)75%, rgba(205,190,145,0.75) 100%); 
+}
+
+#build {
+    background-image: url("assets/loot.svg");
+}
+
+#build:hover {
+    background-image:url("assets/loot.svg"), linear-gradient(180deg, rgba(205, 190, 145, 0.1) 0%, rgba(205, 190, 145, 0.25)75%, rgba(205,190,145,0.75) 100%); 
+}
+
+#store {
+    background-image: url("assets/store.svg");
+}
+
+#store:hover {
+    background-image:url("assets/store.svg"), linear-gradient(180deg, rgba(205, 190, 145, 0.1) 0%, rgba(205, 190, 145, 0.25)75%, rgba(205,190,145,0.75) 100%); 
+}
+
+.navbarIcon {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 60%;
+}
+
+.separator-right::after {
+    content: "";
+    width: 3px;
+    aspect-ratio: 1 / 1;
+    background-image: radial-gradient(circle, rgba(205,190,145,1) 0%, rgba(255,255,255,0) 100%);
+    height: 80%;
+    transform: translate(33px, 15px);
+    place-self: center;
+    display: inline-block;
+}
+
+
 #home {
     grid-row: 2 / 3;
     /*! background-color: rgba(0, 0, 255, 0.5); */
@@ -146,12 +211,18 @@ body {
     background-position: 50%;
     padding: 1px;
     z-index: 5;
+    font-size: 15px;
     /* visibility: hidden; */
 }
 
 #profileText {
     color: var(--riot-text);
     text-align: left;
+    align-self: center;
+}
+
+#summonerName {
+    font-size: 17.5px;
 }
 
 #summonerStatus {
@@ -170,6 +241,13 @@ body {
     border-radius: 50%;
     border: solid 1px rgb(54, 217, 135);
     transform: translate(-3px, 0);
+}
+
+#bell {
+    background-image: url("assets/notifications_button_icon.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50%;
 }
 
 #social {
@@ -211,8 +289,23 @@ body {
     background-position: 50% 50%;
 }
 
+.socialIcon:nth-child(1) {
+    background-image: url("assets/add-friend.svg");
+}
 
+.socialIcon:nth-child(2) {
+    background-image: url("assets/add_folder.png");
+    background-size: 70%;
+}
 
+.socialIcon:nth-child(3) {
+    background-image: url("assets/allicon.svg");
+    background-size: 60%;
+}
+
+.socialIcon:nth-child(4) {
+    background-image: url("assets/search.png");
+}
 
 #buttons {
     grid-row: 3 / 4;
@@ -242,8 +335,26 @@ body {
     aspect-ratio: 1 / 1;
     /* border: 1px solid black; */
     background-color: var(--riot-gray);
-    background-image: url("assets/icon_low.png");
+    /* background-image: url("assets/icon_low.png"); */
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+
+#innerBtn1 {
+    background-image: url("assets/chat.svg");
+}
+
+#innerBtn2 {
+    background-image: url("assets/mission.svg");
+    background-size: 70%;
+}
+
+#innerBtn3 {
+    background-image: url("assets/mic-hover.png");
+    background-size: 70%;
+}
+
+#innerBtn4 {
+    border: none;
 }
