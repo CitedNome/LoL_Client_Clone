@@ -127,7 +127,82 @@ body {
     transform: translate(33px, 15px);
     place-self: center;
     display: inline-block;
+    border-radius: 50%;
 }
+
+#currencies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    color: var(--riot-text);
+}
+
+#rpDiv {
+    display: grid;
+    align-items: center;
+    text-align: left;
+    grid-template-columns: 1fr 2fr 1fr;    
+    background-color: var(--riot-dark);
+    border: 1px solid var(--riot-gldd);
+    border-radius: 50px;
+    width: 55%;
+    height: 25%;
+}
+
+#rpIcon {
+    height: 100%;
+    background-image: url("assets/rp.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 55%;
+}
+
+#riotPoints {
+    grid-column: 2 / 3;
+}
+
+#rpPlus {
+    height: 100%;
+    background-image: url("assets/button-add.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 80%;
+}
+
+#rpPlus:hover {
+    background-image: url("assets/button-add-hover.png");
+}
+
+#rpPlus:active {
+    background-image: url("assets/button-add-down.png");
+}
+
+#beDiv {
+    display: grid;
+    align-items: center;
+    text-align: left;
+    grid-template-columns: 1fr 2fr 1fr;    
+    width: 55%;
+    height: 25%;
+}
+
+#beIcon {
+    height: 100%;
+    background-image: url("assets/lcu-be-svg.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 45%;
+}
+
+#blueEssence {
+    margin: 0 auto;
+}
+
+
+
+
+
 
 
 #home {
